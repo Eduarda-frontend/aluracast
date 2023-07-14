@@ -1,0 +1,55 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "aside header"
+    "aside main";
+    grid-template-columns: auto 1fr;
+}
+
+
+.cabecalho{
+    display: block;
+    grid-area: header;
+}
+
+
+
+.principal{
+    grid-area: main;
+}
+    
+.secao-vertical{
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr 2fr;
+}
+
+.secao{
+    display: grid;
+    align-items: center;
+}
+.secao-horizontal .cartao{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 1.25rem;
+}
+
+.secao-horizontal .cartao__imagem{
+    grid-area: 1/1/4/2;
+}
+
+.secao-horizontal .cartao__botao{
+    grid-area: 1/3/4/4;
+}
+
+.secao-horizontal{
+    grid-template-rows: 120px auto;
+}
+.secao-horizontal .cartao__titulo{
+    align-self: end;
+}
+
+
+
+    
+
+ 
